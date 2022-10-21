@@ -19,19 +19,22 @@ class CarsService implements IService<ICar> {
     return this._cars.create(parsed.data);
   }
 
+  public async read():Promise<ICar[]> {
+    const cars = await this._cars.read();
+    return cars;
+  }
+
   public async readOne(_id:string):Promise<ICar> {
     const car = await this._cars.readOne(_id);
     if (!car) throw new Error(ErrorTypes.EntityNotFound);
     return car;
   }
 
-  public async read():Promise<ICar[]> {
-    const cars = await this._cars.read();
-    return cars;
-  }
-
   public async update(_id: string, obj: unknown): Promise<ICar> {
-    const parsed = carZodSchema.partial().safeParse(obj);
+    if (obj === '') {
+      throw new Error(ErrorTypes.ObjectIsEmpty);
+    }
+    const parsed = carZodSchema.safeParse(obj);
     if (!parsed.success) {
       throw parsed.error;
     }
