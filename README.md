@@ -18,6 +18,7 @@ Este projeto, realizado no módulo de Back-End do curso de Desenvolvimento Web d
 ## Informações ##
 
 Para iniciar o projeto utilizando Docker Compose: docker-compose up -d
+
 Para iniciar o projeto localmente: npm run dev
 
 Para acessar o projeto: http://localhost:3001
