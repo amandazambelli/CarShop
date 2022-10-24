@@ -1,6 +1,6 @@
 # CAR SHOP PROJECT #
 
-Este projeto, realizado no módulo de Back-End do curso de Desenvolvimento Web da Trybe, consiste na construção de uma API com CRUD para gerenciar uma concessionária de veículos. Para isso utilizei o banco de dados MongoDB aplicando os princípios de Programação Orientada a Objetos (POO) e arquitetura em camadas (MSC - Model, Service, Controller). Cobertura total de testes unitários.
+Este projeto, realizado no módulo de Back-End do curso de Desenvolvimento Web da Trybe, consiste na construção de uma API com CRUD para gerenciar uma concessionária de veículos. Para isso utilizei os princípios de Programação Orientada a Objetos (POO), banco de dados com MongoDB e arquitetura em camadas (MSC - Model, Service, Controller). Cobertura total de testes unitários.
 
 
 ## Habilidades Desenvolvidas ##
