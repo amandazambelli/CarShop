@@ -106,7 +106,6 @@ describe('Cars Service', () => {
 			}
 			expect(errorToTest.message).to.be.equal(ErrorTypes.ObjectIsEmpty);
 		});
-
 	});
 
   describe('Deleting a car', () => {
